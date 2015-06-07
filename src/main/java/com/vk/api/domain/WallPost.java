@@ -1,4 +1,4 @@
-package com.vk.api;
+package com.vk.api.domain;
 
 import org.joda.time.DateTime;
 
@@ -12,6 +12,8 @@ public class WallPost {
     private DateTime date;
     private String text;
     private ArrayList<String> attached;
+    private WallPost reposted;
+    private ArrayList<Comment> comments;
 
     public WallPost() {
         attached = new ArrayList<String>();
